@@ -1,0 +1,47 @@
+.placeholders {
+//   display: flex;
+//   justify-content: center;
+  width: 80vw;
+  margin: auto;
+}
+.container {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
+.placeholder {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  padding: 1rem 1rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #ccc;
+}
+.circle {
+  background-color: #d3d2da;
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+}
+.lines {
+  width: 80%;
+  margin-top: 6px;
+}
+.line1 {
+  height: 10px;
+  width: 70%;
+  background: #d3d2da;
+  border-radius: 10px;
+  z-index: 0;
+}
+.line2 {
+  height: 10px;
+  width: 30%;
+  background: #d3d2da;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  z-index: 0;
+}
