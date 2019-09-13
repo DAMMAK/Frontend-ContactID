@@ -1,7 +1,7 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -153,6 +153,7 @@ nav {
     left: 80%;
     transform: translate(-50%, -50%);
     color: #ccc;
+    font-size: 18px;
     @media (max-width: 600px) {
       margin-left: 25px;
       margin-top: 2rem;

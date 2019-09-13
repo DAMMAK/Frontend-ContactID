@@ -2,6 +2,18 @@ import React from "react";
 import "./Header.scss";
 import logo from "../img/logo.png";
 
+const keyPress = () => {
+  console.log("It is currently Working");
+  const afterButton = document.querySelector("#afterButton");
+  afterButton.classList.remove("fa-search");
+  afterButton.classList.add("fa-times");
+};
+
+const keyBlur = () => {
+  const afterButton = document.querySelector("#afterButton");
+  afterButton.classList.remove("fa-times");
+  afterButton.classList.add("fa-search");
+};
 const NavBar = () => (
   <header>
     <nav>
@@ -40,8 +52,10 @@ const NavBar = () => (
           <input
             type="text"
             placeholder="Enter a name and hit enter to search e.g Joseph"
+            onFocus={keyPress}
+            onBlur={keyBlur}
           />
-          <i className="fas fa-search" />
+          <i className="fas fa-search" id="afterButton" />
         </div>
       </div>
     </section>
